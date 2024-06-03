@@ -162,3 +162,5 @@ cython_debug/
 #.idea/
 teste.py
 .vscode
+prog
+.gitignore

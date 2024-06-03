@@ -1,1 +1,3 @@
-from .wrappers import *
+from .tempo import *
+from .matematica import *
+from .bibliotecas import *

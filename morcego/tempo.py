@@ -1,6 +1,8 @@
 import time as tm
 
-def time(espesifico=False):
+
+
+def mtempo(espesifico=False):
     def decorator(func):
         def wrapper(*args, **kwargs):
             if espesifico:
@@ -12,8 +14,36 @@ def time(espesifico=False):
                 i = int(tm.time())
                 func(*args, **kwargs)
                 f = int(tm.time())
-                print(f - i)
-            return func
+                total = f - i
+                print(total, "s")
         return wrapper
     return decorator
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
